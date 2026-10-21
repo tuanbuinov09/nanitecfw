@@ -10,9 +10,9 @@
 
 # Scroll wheel: timer 0 (IRQ 0x23, FUN_03065fd4 -> FUN_03063100) samples the
 # quadrature pins GPIO2.14/2.15 every 400 us = 2500 wakeups/s. A fast spin is
-# ~300 state changes/s, so 1 ms still samples each state ~3 times.
-# mov.w r2,#400 -> #1000 (period in us, FUN_03053a4e) at every timer-0 setup.
-0:0306b2cc:4ff47a72             # kernel init
-1:03079f9c:4ff47a72             # boot init
-9:0307c4a8:4ff47a72
-33:03082b7c:4ff47a72            # music service
+# ~300 state changes/s, so 1.8 ms still samples each state about twice.
+# mov.w r2,#400 -> #1800 (period in us, FUN_03053a4e) at every timer-0 setup.
+0:0306b2cc:4ff4e162             # kernel init
+1:03079f9c:4ff4e162             # boot init
+9:0307c4a8:4ff4e162
+33:03082b7c:4ff4e162            # music service

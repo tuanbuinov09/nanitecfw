@@ -24,7 +24,7 @@ on your computer.
 | **Unsupported tracks** are skipped without a popup; playback stops after 10 failures in a row | tested on device |
 | **Album Artists / Artists**: the stock Artists list, which groups by album artist, is renamed "Album Artists"; a new "Artists" list groups by each track's own artist | tested on device |
 | `CFWLOG.TXT` in the card's root after each refresh: timings and counters | tested on device |
-| **Power saving**: lower CPU clocks during playback (decode core 144-288 MHz instead of 350-450 MHz for MP3, AAC, WMA, WAV, OGG, FLAC and ALAC), the CPU sleeps between events with the screen on, and the scroll wheel is polled every 1 ms instead of every 0.4 ms | new in 6.0.5; battery gain not measured |
+| **Power saving**: lower CPU clocks during playback (decode core 144-288 MHz instead of 350-450 MHz for MP3, AAC, WMA, WAV, OGG, FLAC and ALAC), the CPU sleeps between events with the screen on, and the scroll wheel is polled every 1.8 ms instead of every 0.4 ms | new in 6.0.5; battery gain not measured |
 
 About shows the custom version (6.0.x) instead of the stock version.
 
