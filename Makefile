@@ -9,7 +9,7 @@
 
 FW      ?= NANOV170.IMG
 OUT     ?= out/NANOV170.IMG
-DATE    ?= 20260826
+DATE    ?= 20260827
 PY      := python3
 FWTOOL  := $(PY) tools/rknano_fw.py
 
@@ -48,7 +48,7 @@ $(BLOB) out/gen/syms.inc &: $(SRC) src/hooks.txt tools/build_blob.sh tools/hooks
 # stock code, new date: the loader boots the newest valid copy, so the original
 # image would not replace a newer custom build
 ifeq ($(origin DATE),file)
-recovery: DATE := 20260827
+recovery: DATE := 20260828
 endif
 recovery: check
 	@mkdir -p out/recovery
